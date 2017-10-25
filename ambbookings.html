@@ -1,0 +1,208 @@
+<html>
+
+  <head>
+    <title>Ambala Bookigs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel = "stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+
+
+    $(function(){
+    var navMain = $("#myNavbar");
+    navMain.on("click", "a", null, function () {
+        navMain.collapse('hide');
+    });
+});
+    </script>
+    
+<script>
+  $('.mymodal').on('hidden.bs.modal', function (e) {
+    $('.carousel').carousel(0);
+  });
+</script>
+ <script type="text/javascript"></script>
+  </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="30">
+      <!--start of header-->
+      <div class="row even" id="home">
+              <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="navbar-header">
+                        <button type="button" class="pull-left navbar-toggle" data-target="#myNavbar" data-toggle="collapse" id="n`button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="content" style="margin-top:5px;">
+                          <form class="form-search">
+
+
+                          <div class="input-append">
+                            <a class="navbar-brand" href="#" style="margin-top:-25px;"><img src="img/AMBALA BOOKING logo.png"  height="45px"></a>
+
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+
+                    <div class="navbar-collapse collapse" id="myNavbar" style="padding: 0 20px">
+
+
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li class="active"><a href="#">HOME</a></li>
+
+                            <li class="active"><a href="#">SERVICES</a></li>
+
+                            <li class=""><a href="#about">ABOUT US</a></li>
+
+                            <li class=""><a href="#contact">CONTACT US</a></li>
+                            <li class="mbox">
+                                <span><a href="signin.php">Sign in</a> / <a href="signup.php">Sign Up</a>
+                                </span>
+                            </li>
+                           
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+            </div>
+          </div>
+
+
+
+
+      <!--end-->
+      <!--carousel-->
+      <div style="height:3.5em"></div>
+            <div class="coursel-content">
+
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+
+              </ol>
+
+            <div class="carousel-inner">
+
+              <div class="item active">
+                <a href="#"><img src="img/img4.jpg" class="img-responsive"></a>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <div class="col-sm-12 text-center">
+                      <button id="myBtn">BOOK NOW</button>
+                     </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="item">
+                <a href="#"><img src="img/img5.jpg" class="img-responsive" /></a>
+                <div class="container">
+                   <div class="carousel-caption">
+                    <div class="col-sm-12 text-center">
+                      <button id="myBtn">BOOK NOW</button>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <a href="#"><img src="img/img6.jpg" class="img-responsive" /></a>
+                <div class="container">
+                   <div class="carousel-caption">
+                    <div class="col-sm-12 text-center">
+                      <button id="myBtn">BOOK NOW</button>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+          </div>
+          
+ <!--end-->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    
+     <div class="address">
+          <select >
+            <option value="volvo">Ambala</option>
+            <option value="saab">Mahesh Nagar</option>
+            <option value="mercedes">Agarsen</option>
+            <option value="audi">Ram Nagar</option>
+        </select>
+      </div>
+
+      <div id="brand_div">
+      <select id="brand_box_id" class="select_style" onchange="change_model(this.value,'model_box_id')" name="brand" data-validation="number" data-validation-error-msg="Please Choose the Brand">
+      <option value="" selected="selected" disabled>Select Brand</option>
+     </select>
+     </div>
+        
+        <div id="model_div">
+          <select id="model_box_id" class="select_style" name="model" data-validation="number" data-validation-error-msg="Please Choose the Model">
+          <option selected disabled value="">Select Model</option>
+          </select>
+          </div>
+ 
+    <button class="searchtab_btn" name="submit" value="submit" type="submit">SUBMIT</button>
+   </div>
+ 
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+
+
+    </body>
+  </html>
