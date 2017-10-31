@@ -4,7 +4,6 @@
     font-weight: 700;
 }
 
-
 .navbar-brand{
     padding: 4px 25px;
 }
@@ -33,12 +32,12 @@
       outline:none;
   }
   .navbar-inverse .navbar-toggle {
-    border-color: white;/*border of toggle*/
+    border-color: #c0c0c0;/*border of toggle*/
     margin-right: 20px;
 }
 
 .navbar-inverse .navbar-toggle:hover {
-    background-color: white;
+    background-color: #c0c0c0;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color:red;/*color of toggle*/
@@ -146,7 +145,7 @@ and (max-device-width : 1023px)  {
     }
 }
 .navbar-inverse .navbar-nav>li>a:hover{
-    color: white;
+    color: red;
 
     text-decoration: none;
 
@@ -156,29 +155,29 @@ and (max-device-width : 1023px)  {
 
 .navbar-header
 {
-  background-color: #fff;
+  background-color: #c0c0c0;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: red;
-    background-color: #fff;
+    background-color: #c0c0c0;
 }
 
 
 .navbar-inverse {
-    background-color: #fff;
-     border-color: #fff;
+    background-color: #c0c0c0;
+     border-color: #c0c0c0;
 }
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-     background-color: #fff;
-
+     background-color: #c0c0c0;
+    color:red;
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color:#fff;
+    border-color:#c0c0c0;
 
 }
 .navbar-inverse {
-    background-color: #fff;
-     border-color: #fff;
+    background-color: #c0c0c0;
+     border-color: #c0c0c0;
 }
 
 
@@ -193,7 +192,7 @@ and (max-device-width : 1023px)  {
 
 
 .navbar-inverse .navbar-brand {
-    color: white;
+    color: red;
 }
 
 #myNavbar ul ul
@@ -206,7 +205,7 @@ and (max-device-width : 1023px)  {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color:white;
+    color:red;
     white-space: nowrap;
 }
 
@@ -243,11 +242,11 @@ and (max-device-width : 1023px)  {
 
 #sellbut:hover{
   background-color: #57d197;
-  color: white;
+  color: red;
 }
 .selection a:hover{
   text-decoration: none;
-  color: white;
+  color: red;
 }
 .items items1 a:hover{
   text-decoration: none;
@@ -269,16 +268,16 @@ and (max-device-width : 1023px)  {
 .modal-content {
     background-color: Red;
     opacity:0.9;
-    margin: 150px 270px;
+    margin: 150px 0 0 425px;
     padding: 20px;
     border: 1px solid #888;
-    width: 55%;
+    width: 35%;
     height: 370px;
 }
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -343,10 +342,9 @@ select.select_style {
     color: grey;
     width: 300px;
     background-color: white;
-    margin-left: 30%;
+    margin-left: 15%;
    
 }
-
 
 .searchtab_btn {
     width: 30%;
@@ -357,4 +355,24 @@ select.select_style {
     border: 0;
     padding: 6px 10px;
     margin-left: 38%;
+}
+
+.aboutus{
+    margin-top:10%;
+    margin-left: 20%;
+    height:500px;
+    width:800px;
+    text-align:center;
+    font-size: 21px;
+    color:#00BFFF;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: Roboto,sans-serif;
+     
+}
+.headingabout{
+    color: red;
+    font-size: 35px;
+    font-family: Roboto,sans-serif;
+
 }
